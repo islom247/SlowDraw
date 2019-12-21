@@ -39,7 +39,6 @@ public class Main extends Application {
 
     public HBox getHBox1(Canvas canvas) {
         GraphicsContext graphicsContext = canvas.getGraphicsContext2D();
-        //graphicsContext.setLineWidth(slider.getValue());
         canvas.addEventHandler(MouseEvent.MOUSE_PRESSED, e -> {
             graphicsContext.setLineWidth(slider.getValue());
             graphicsContext.beginPath();
@@ -71,8 +70,6 @@ public class Main extends Application {
                 slider.setValue(5);
             }
         });
-
-        //Slider slider = new Slider(1, 10, 5);
         slider.setBlockIncrement(1);
         slider.setMajorTickUnit(1);
         slider.setMinorTickCount(0);
@@ -89,7 +86,6 @@ public class Main extends Application {
                 //send it to ml module
                 //get the guessed answer
                 //display it to user
-                //graphicsContext.clearRect(0, 0, canvas.getWidth(), canvas.getHeight());
                 try {
                     WritableImage snapshot = canvas.snapshot(null, null);
                     ImageIO.write(SwingFXUtils.fromFXImage(snapshot, null), "png", new File("a.png"));
