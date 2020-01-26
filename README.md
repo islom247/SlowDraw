@@ -1,5 +1,5 @@
 # SlowDraw
-CS 464 (Introduuction to Machine Learning) project.  
+CS 464 (Introduction to Machine Learning) project.  
 
 Main purpose of the project is doodle classification.  
 The program aims to recognize the doodles  
